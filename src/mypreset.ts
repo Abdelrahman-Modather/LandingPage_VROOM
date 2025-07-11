@@ -27,14 +27,14 @@ const customPreset = definePreset(Aura, {
           activeColor: '#B91C1C', // Deeper red for active
         },
         highlight: {
-          background: '#FFFFFF', // White background
+          background: '#F3F7FF', // White background
           focusBackground: '#FFF0EB', // Very light orange for focus background
           color: '#000000', // Black text for highlights
           focusColor: '#000000', // Black text for focus highlights
         },
         // Main application background and text colors
         surface: {
-          background: '#ffffff', // White background
+          background: '#F3F7FF', // White background
           color: '#000000', // Black for main text
         },
         // Specific text colors for different shades in light mode
@@ -61,7 +61,7 @@ const customPreset = definePreset(Aura, {
         },
         // Main application background and text colors
         surface: {
-          background: '#000000', // Black background
+          background: '#101010', // Black background
           color: '#ffffff', // Explicitly setting white for main text
         },
         // Specific text colors for different shades in dark mode

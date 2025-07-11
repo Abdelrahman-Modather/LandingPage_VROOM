@@ -1,6 +1,11 @@
 /* Add this to your global CSS file or a relevant component's style sheet */
 
-
+main{
+  background-image: url('../../../../public/hero.png');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
 
 @keyframes fadeInDown {
   from {
