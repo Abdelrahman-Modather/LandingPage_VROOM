@@ -1,0 +1,126 @@
+
+@keyframes float {
+            0%, 100% { transform: translateY(0px); }
+            50% { transform: translateY(-10px); }
+        }
+
+        .float-animation {
+            animation: float 3s ease-in-out infinite;
+        }
+
+        .glass-effect {
+            background: var(--p-highlight-background);
+            backdrop-filter: blur(10px);
+            border: 1px solid var(--p-border-color);
+        }
+
+        .card-hover {
+            transition: all 0.3s ease;
+            background-color: var(--p-primary-inverse-color);
+            border: 1px solid var(--p-border-color);
+        }
+
+        .card-hover:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 40px rgba(220, 38, 38, 0.1);
+        }
+
+        .primary-gradient {
+            background: linear-gradient(135deg, var(--p-primary-color), var(--p-primary-700));
+        }
+
+        .secondary-gradient {
+            background: linear-gradient(135deg, var(--p-primary-400), var(--p-primary-600));
+        }
+
+        .accent-gradient {
+            background: linear-gradient(135deg, var(--p-primary-300), var(--p-primary-500));
+        }
+
+        .trust-badge {
+            background-color: var(--p-highlight-focus-background);
+            color: var(--p-primary-color);
+            border: 1px solid var(--p-primary-200);
+        }
+
+        .btn-primary {
+            background: var(--p-primary-color);
+            color: var(--p-primary-inverse-color);
+            transition: all 0.3s ease;
+        }
+
+        .btn-primary:hover {
+            background: var(--p-primary-hover-color);
+            transform: translateY(-2px);
+        }
+
+        .btn-primary:active {
+            background: var(--p-primary-active-color);
+        }
+
+        .btn-secondary {
+            border: 2px solid var(--p-border-color);
+            color: var(--p-text-default);
+            background: transparent;
+            transition: all 0.3s ease;
+        }
+
+        .btn-secondary:hover {
+            border-color: var(--p-primary-color);
+            color: var(--p-primary-color);
+        }
+
+        .text-gradient {
+            background: linear-gradient(135deg, var(--p-primary-color), var(--p-primary-400));
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .feature-badge {
+            background-color: var(--p-primary-color);
+            color: var(--p-highlight-background);
+            border: 1px solid var(--p-primary-200);
+        }
+
+        .stats-card {
+            background-color: var(--p-primary-inverse-color);
+            border: 1px solid var(--p-border-color);
+        }
+
+        .live-badge {
+            background-color: var(--p-primary-color);
+            color: var(--p-primary-inverse-color);
+        }
+
+        .ai-badge {
+            background-color: var(--p-primary-color);
+            color: var(--p-primary-inverse-color);
+        }
+
+        .icon-primary {
+            background: var(--p-primary-color);
+            color: var(--p-primary-inverse-color);
+        }
+
+        .icon-secondary {
+            background: var(--p-primary-color);
+            color: var(--p-primary-inverse-color);
+        }
+
+        .icon-accent {
+            background: var(--p-primary-color);
+            color: var(--p-primary-inverse-color);
+        }
+
+        .text-muted {
+            color: var(--p-text-muted);
+        }
+
+        .rating-stars {
+            color: var(--p-primary-400);
+        }
+
+        .learn-more-text {
+            color: var(--p-primary-color);
+        }

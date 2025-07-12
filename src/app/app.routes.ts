@@ -1,14 +1,11 @@
 import { Routes } from '@angular/router';
-import { HeroSectionComponent } from './components/hero-section/hero-section.component';
-import { ServicesSectionComponent } from './components/services-section/services-section.component';
+import { Know_moreComponent } from './components/know_more/know_more.component';
+import { BookNowComponent } from './components/book-now/book-now.component';
+import { SignUpComponent } from './components/sign-up/sign-up.component';
 
 export const routes: Routes = [
     {
-        path: 'hero',
-        component: HeroSectionComponent,
-    },
-    {
-        path: 'services',
-        component: ServicesSectionComponent
+        path: 'test',
+        component: SignUpComponent,
     }
 ];

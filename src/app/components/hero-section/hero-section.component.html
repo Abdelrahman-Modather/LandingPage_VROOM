@@ -4,13 +4,13 @@
     <nav class="mx-auto max-w-7xl rounded-b-xl px-4 sm:px-6 lg:px-8">
       <div class="w-full lg:flex lg:items-center lg:gap-2">
         <div class="flex items-center justify-between max-lg:w-full">
-          <a class="flex items-center gap-3 text-xl font-bold" href="#" style="color: var(--p-text-default);">
+          <a class="flex items-center gap-3 text-xl font-bold" style="color: var(--p-text-default);">
             <img src="logo.png" class="w-[150px] logo" alt="brand-logo" />
           </a>
           <div class="flex items-center gap-5 lg:hidden">
-            <a href="#" class="inline-flex items-center gap-2 rounded-lg px-4 py-2 font-semibold transition-all"
+            <a href="#sign" class="inline-flex items-center gap-2 rounded-lg px-4 py-2 font-semibold transition-all"
               style="background-color: var(--p-primary-color); color: var(--p-primary-inverse-color);">
-              Login
+              Book your service
             </a>
             <button type="button" class="inline-flex items-center justify-center rounded-lg p-2 transition-all"
               style="background-color: transparent; color: var(--p-text-default); border: 1px solid var(--p-border-color);"
@@ -24,10 +24,9 @@
           [class.hidden]="!isMobileMenuOpen" [class.flex]="isMobileMenuOpen">
           <div class="flex gap-6 text-base max-lg:mt-4 max-lg:flex-col lg:items-center"
             style="color: var(--p-text-default);">
-            <a href="#" class="hover:opacity-80 transition-opacity">Home</a>
-            <a href="#" class="hover:opacity-80 transition-opacity">Products</a>
-            <a href="#" class="hover:opacity-80 transition-opacity">About Us</a>
-            <a href="#" class="hover:opacity-80 transition-opacity">Contacts</a>
+            <a href="#features" class="hover:opacity-80 transition-opacity">Features</a>
+            <a href="#why" class="hover:opacity-80 transition-opacity">Why VROOM</a>
+            <a href="#ourprocess" class="hover:opacity-80 transition-opacity">Our Process</a>
             <p-button [icon]="isDarkMode ? 'pi pi-moon' : 'pi pi-sun'" (onClick)="toggleDarkMode()"
             [style]="{'color': 'var(--p-text-default)', 'background-color': 'transparent', 'border-color': 'transparent'}"
             [class.hidden]="isMobileMenuOpen? false : true"
@@ -39,14 +38,14 @@
           <p-button [icon]="isDarkMode ? 'pi pi-moon' : 'pi pi-sun'" (onClick)="toggleDarkMode()"
             [style]="{'color': 'var(--p-text-default)', 'background-color': 'transparent', 'border-color': 'transparent'}"
             aria-label="Toggle theme" variant="text" />
-          <p-button label="Login"
+          <p-button label="Book your service"
             [style]="{'background-color': 'var(--p-primary-color)', 'border-color': 'var(--p-primary-color)'}" />
         </div>
       </div>
     </nav>
   </header>
 
-  <main class="h-screen animate-fade-in-down">
+  <main class="h-screen animate-fade-in-down bg-[var(--p-surface-background)] ">
     <div
       class="flex h-full flex-col justify-between gap-18 overflow-x-hidden pt-40 md:gap-24 md:pt-45 lg:gap-35 lg:pt-47.5">
       <div
@@ -81,7 +80,7 @@
           service powered by VROOM.
         </p>
 
-        <a href="#" class="inline-flex items-center gap-2 rounded-lg px-8 py-4 text-lg font-semibold transition-all"
+        <a href="#sign" class="inline-flex items-center gap-2 rounded-lg px-8 py-4 text-lg font-semibold transition-all"
           style="background: linear-gradient(135deg, var(--p-primary-color), var(--p-primary-inverse-color)); color: var(--p-primary-inverse-color);">
           Try it Now
           <span class="text-lg">→</span>

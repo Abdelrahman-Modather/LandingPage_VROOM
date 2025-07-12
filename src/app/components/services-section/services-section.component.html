@@ -1,114 +1,168 @@
-    <div class="relative overflow-hidden bg-[var(--p-surface-background)] py-24 sm:py-32">
-        <!-- Animated Background Elements -->
-        <div class="absolute inset-0 bg-gradient-mesh opacity-50"></div>
-        <div class="absolute top-10 left-10 w-72 h-72 bg-[var(--p-primary-color)] rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-pulse"></div>
-        <div class="absolute bottom-10 right-10 w-96 h-96 bg-[var(--p-primary-color)] rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-pulse animation-delay-2000"></div>
-        
-        <div class="relative mx-auto max-w-7xl px-6 lg:px-8">
-            <!-- Header Section with Animation -->
-            <div class="text-center mb-16 animate-scale-in">
-                <h2 class="text-base/7 font-semibold text-[var(--p-primary-color)] mb-4 tracking-wide uppercase">
-                    Streamline your deliveries
-                </h2>
-                <p class="text-5xl font-bold tracking-tight text-pretty text-[var(--p-text-default)] sm:text-6xl text-shadow mb-6">
-                    Smarter Delivery 
-                    <span class="bg-gradient-to-r from-[var(--p-primary-color)] to-[var(--p-primary-color)] bg-clip-text text-transparent">
-                        Management
-                    </span>
-                </p>
-                <p class="text-xl text-[var(--p-text-muted)] max-w-3xl mx-auto leading-relaxed">
-                    We streamline your delivery operations by automatically assigning riders, optimizing their routes for speed and efficiency, and providing actionable business insights to help you grow.
-                </p>
-            </div>
+<div
+  class="relative overflow-hidden bg-[var(--p-surface-background)] py-24 sm:py-32"
+>
+  <!-- Animated Background Elements -->
+  <div
+    class="absolute top-10 left-10 w-72 h-72 bg-[var(--p-primary-color)] rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-pulse"
+  ></div>
+  <div
+    class="absolute bottom-10 right-10 w-96 h-96 bg-[var(--p-primary-color)] rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-pulse animation-delay-2000"
+  ></div>
 
-            <!-- Main Content Grid -->
-            <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
-                <!-- Features Section -->
-                <div class="space-y-8">
-                    <!-- Feature 1 -->
-                    <div class="feature-item service-card p-6 bg-[var(--p-primary-inverse-color)] rounded-2xl shadow-lg border border-gray-100 hover:shadow-xl">
-                        <div class="flex items-start space-x-4">
-                            <div class="flex-shrink-0 w-12 h-12 bg-[var(--p-primary-color)] rounded-xl flex items-center justify-center animate-pulse-hover">
-<i class="pi pi-truck" style="color: var(--p-primary-inverse-color);font-size: 1.5rem"></i>
-
-                            </div>
-                            <div>
-                                <h3 class="text-xl font-bold text-[var(--p-text-default)] mb-3">
-                                    Automated Rider Assignments
-                                </h3>
-                                <p class="text-[var(--p-text-muted)] leading-relaxed">
-                                    Our intelligent system automatically assigns the best-suited rider for each delivery, considering location, workload, and vehicle type, eliminating manual effort.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Feature 2 -->
-                    <div class="feature-item service-card p-6 bg-[var(--p-primary-inverse-color)] rounded-2xl shadow-lg border border-gray-100 hover:shadow-xl">
-                        <div class="flex items-start space-x-4">
-                            <div class="flex-shrink-0 w-12 h-12  bg-[var(--p-primary-color)] rounded-xl flex items-center justify-center animate-pulse-hover">
-<i class="pi pi-map" style="color: var(--p-primary-inverse-color);font-size: 1.5rem"></i>
-                            </div>
-                            <div>
-                                <h3 class="text-xl font-bold text-[var(--p-text-default)] mb-3">
-                                    Optimized Routes
-                                </h3>
-                                <p class="text-[var(--p-text-muted)] leading-relaxed">
-                                    Generate the most efficient multi-stop routes, saving fuel and time, ensuring faster delivery times and happier customers.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Feature 3 -->
-                    <div class="feature-item service-card p-6 bg-[var(--p-primary-inverse-color)] rounded-2xl shadow-lg border border-gray-100 hover:shadow-xl">
-                        <div class="flex items-start space-x-4">
-                            <div class="flex-shrink-0 w-12 h-12  bg-[var(--p-primary-color)] rounded-xl flex items-center justify-center animate-pulse-hover">
-<i class="pi pi-chart-bar" style="color: var(--p-primary-inverse-color);font-size: 1.5rem"></i>
-
-                            </div>
-                            <div>
-                                <h3 class="text-xl font-bold text-[var(--p-text-default)] mb-3">
-                                    Business Insights
-                                </h3>
-                                <p class="text-[var(--p-text-muted)] leading-relaxed">
-                                    Access powerful analytics and reports on your delivery performance, customer trends, and rider efficiency to make data-driven decisions.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Image Section with Enhanced Styling -->
-                <div class="relative animate-slide-in-right">
-                    <div class="absolute inset-0  bg-[var(--p-primary-color)] rounded-3xl transform rotate-3 opacity-20"></div>
-                    <div class="absolute inset-0  bg-[var(--p-primary-color)] rounded-3xl transform -rotate-3 opacity-20"></div>
-                    <div class="relative">
-                        <img
-                            src="rider.png"
-                            alt="Delivery Management Dashboard"
-                            class="w-full h-auto rounded-3xl  animate-float border-4 border-white"
-                            style="max-width: 600px;"
-                        />
-
-                    </div>
-                </div>
-            </div>
-
-            <!-- Stats Section -->
-            <div class="mt-20 grid grid-cols-1 md:grid-cols-3 gap-8">
-                <div class="text-center p-6 bg-[var(--p-primary-inverse-color)] rounded-2xl shadow-lg service-card">
-                    <div class="text-4xl font-bold text-[var(--p-primary-color)] mb-2">99%</div>
-                    <div class="text-[var(--p-text-muted)]">Delivery Success Rate</div>
-                </div>
-                <div class="text-center p-6 bg-[var(--p-primary-inverse-color)] rounded-2xl shadow-lg service-card">
-                    <div class="text-4xl font-bold text-[var(--p-primary-color)] mb-2">30%</div>
-                    <div class="text-[var(--p-text-muted)]">Faster Delivery Times</div>
-                </div>
-                <div class="text-center p-6 bg-[var(--p-primary-inverse-color)] rounded-2xl shadow-lg service-card">
-                    <div class="text-4xl font-bold text-[var(--p-primary-color)] mb-2">50%</div>
-                    <div class="text-[var(--p-text-muted)]">Cost Reduction</div>
-                </div>
-            </div>
-        </div>
+  <div class="relative mx-auto max-w-7xl px-6 lg:px-8">
+    <!-- Header Section with Animation -->
+    <div class="text-center mb-16 animate-scale-in">
+      <h2
+        class="text-base/7 font-semibold text-[var(--p-primary-color)] mb-4 tracking-wide uppercase"
+      >
+        Streamline your deliveries
+      </h2>
+      <p
+        class="text-5xl font-bold tracking-tight text-pretty text-[var(--p-text-default)] sm:text-6xl text-shadow mb-6"
+      >
+        Smarter Delivery
+        <span
+          class="bg-gradient-to-r from-[var(--p-primary-color)] to-[var(--p-primary-color)] bg-clip-text text-transparent"
+        >
+          Management
+        </span>
+      </p>
+      <p
+        class="text-xl text-[var(--p-text-muted)] max-w-3xl mx-auto leading-relaxed"
+      >
+        We streamline your delivery operations by automatically assigning
+        riders, optimizing their routes for speed and efficiency, and providing
+        actionable business insights to help you grow.
+      </p>
     </div>
+
+    <!-- Main Content Grid -->
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+      <!-- Features Section -->
+      <div class="space-y-8">
+        <!-- Feature 1 -->
+        <div
+          class="feature-item service-card p-6 bg-[var(--p-primary-inverse-color)] rounded-2xl shadow-lg border border-gray-100 hover:shadow-xl"
+        >
+          <div class="flex items-start space-x-4">
+            <div
+              class="flex-shrink-0 w-12 h-12 bg-[var(--p-primary-color)] rounded-xl flex items-center justify-center animate-pulse-hover"
+            >
+              <i
+                class="pi pi-truck"
+                style="color: var(--p-primary-inverse-color); font-size: 1.5rem"
+              ></i>
+            </div>
+            <div>
+              <h3 class="text-xl font-bold text-[var(--p-text-default)] mb-3">
+                Automated Rider Assignments
+              </h3>
+              <p class="text-[var(--p-text-muted)] leading-relaxed">
+                Our intelligent system automatically assigns the best-suited
+                rider for each delivery, considering location, workload, and
+                vehicle type, eliminating manual effort.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Feature 2 -->
+        <div
+          class="feature-item service-card p-6 bg-[var(--p-primary-inverse-color)] rounded-2xl shadow-lg border border-gray-100 hover:shadow-xl"
+        >
+          <div class="flex items-start space-x-4">
+            <div
+              class="flex-shrink-0 w-12 h-12 bg-[var(--p-primary-color)] rounded-xl flex items-center justify-center animate-pulse-hover"
+            >
+              <i
+                class="pi pi-map"
+                style="color: var(--p-primary-inverse-color); font-size: 1.5rem"
+              ></i>
+            </div>
+            <div>
+              <h3 class="text-xl font-bold text-[var(--p-text-default)] mb-3">
+                Optimized Routes
+              </h3>
+              <p class="text-[var(--p-text-muted)] leading-relaxed">
+                Generate the most efficient multi-stop routes, saving fuel and
+                time, ensuring faster delivery times and happier customers.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Feature 3 -->
+        <div
+          class="feature-item service-card p-6 bg-[var(--p-primary-inverse-color)] rounded-2xl shadow-lg border border-gray-100 hover:shadow-xl"
+        >
+          <div class="flex items-start space-x-4">
+            <div
+              class="flex-shrink-0 w-12 h-12 bg-[var(--p-primary-color)] rounded-xl flex items-center justify-center animate-pulse-hover"
+            >
+              <i
+                class="pi pi-chart-bar"
+                style="color: var(--p-primary-inverse-color); font-size: 1.5rem"
+              ></i>
+            </div>
+            <div>
+              <h3 class="text-xl font-bold text-[var(--p-text-default)] mb-3">
+                Business Insights
+              </h3>
+              <p class="text-[var(--p-text-muted)] leading-relaxed">
+                Access powerful analytics and reports on your delivery
+                performance, customer trends, and rider efficiency to make
+                data-driven decisions.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Image Section with Enhanced Styling -->
+      <div class="relative animate-slide-in-right">
+        <div
+          class="absolute inset-0 bg-[var(--p-primary-color)] rounded-3xl transform rotate-3 opacity-20"
+        ></div>
+        <div
+          class="absolute inset-0 bg-[var(--p-primary-color)] rounded-3xl transform -rotate-3 opacity-20"
+        ></div>
+        <div class="relative">
+          <img
+            src="rider.png"
+            alt="Delivery Management Dashboard"
+            class="w-full h-auto rounded-3xl animate-float border-4 border-white"
+            style="max-width: 600px"
+          />
+        </div>
+      </div>
+    </div>
+
+    <!-- Stats Section -->
+    <div class="mt-20 grid grid-cols-1 md:grid-cols-3 gap-8">
+      <div
+        class="text-center p-6 bg-[var(--p-primary-inverse-color)] rounded-2xl shadow-lg service-card"
+      >
+        <div class="text-4xl font-bold text-[var(--p-primary-color)] mb-2 increase">
+          99%
+        </div>
+        <div class="text-[var(--p-text-muted)]">Delivery Success Rate</div>
+      </div>
+      <div
+        class="text-center p-6 bg-[var(--p-primary-inverse-color)] rounded-2xl shadow-lg service-card"
+      >
+        <div class="text-4xl font-bold text-[var(--p-primary-color)] mb-2 increase2">
+          30%
+        </div>
+        <div class="text-[var(--p-text-muted)]">Faster Delivery Times</div>
+      </div>
+      <div
+        class="text-center p-6 bg-[var(--p-primary-inverse-color)] rounded-2xl shadow-lg service-card"
+      >
+        <div class="text-4xl font-bold text-[var(--p-primary-color)] mb-2 increase3">
+          50%
+        </div>
+        <div class="text-[var(--p-text-muted)]">Cost Reduction</div>
+      </div>
+    </div>
+  </div>
+</div>
