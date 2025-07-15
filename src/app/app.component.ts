@@ -10,13 +10,25 @@ import { Know_moreComponent } from "./components/know_more/know_more.component";
 import { BookNowComponent } from "./components/book-now/book-now.component";
 import { SignUpComponent } from "./components/sign-up/sign-up.component";
 import { ScrollPanelModule } from 'primeng/scrollpanel';
+import { MessageService } from 'primeng/api';
+import { Toast } from 'primeng/toast';
+import { ButtonModule } from 'primeng/button';
+import { Ripple } from 'primeng/ripple';
+
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, InputIcon, IconField, InputTextModule, FormsModule, HeroSectionComponent, ServicesSectionComponent, Know_moreComponent, BookNowComponent, SignUpComponent, ScrollPanelModule],
+  imports: [RouterOutlet, InputIcon, IconField, InputTextModule, FormsModule, HeroSectionComponent, Toast, ButtonModule, Ripple,ServicesSectionComponent, Know_moreComponent, BookNowComponent, SignUpComponent, ScrollPanelModule],
   templateUrl: './app.component.html',
-  styleUrl: './app.component.css'
+  styleUrl: './app.component.css',
+  providers: [MessageService]
+
 })
 export class AppComponent {
-  title = 'Landing-Page';
+      constructor(private messageService: MessageService) {}
+
+    show() {
+        this.messageService.add({ severity: 'success', summary: 'Success', detail: 'Your request has been sent to the team to review', life: 3000 });
+    }
+  title = 'VROOM';
 }

@@ -7,6 +7,9 @@ import { CheckboxModule } from 'primeng/checkbox';
 import { IconFieldModule } from 'primeng/iconfield';
 import { InputIconModule } from 'primeng/inputicon';
 import { AutoFocusModule } from 'primeng/autofocus';
+import { MessageService } from 'primeng/api';
+import { ToastModule } from 'primeng/toast'; // Changed from Toast to ToastModule
+import { Ripple } from 'primeng/ripple';
 
 @Component({
   selector: 'app-sign-up',
@@ -20,8 +23,11 @@ import { AutoFocusModule } from 'primeng/autofocus';
     CheckboxModule, 
     IconFieldModule, 
     InputIconModule, 
-    AutoFocusModule
-  ]
+    AutoFocusModule,
+    Ripple,
+    ToastModule // Changed from Toast to ToastModule
+  ],
+  providers: [MessageService]
 })
 export class SignUpComponent implements OnInit {
 
@@ -42,7 +48,7 @@ export class SignUpComponent implements OnInit {
     { id: 'enterprise', label: 'Enterprise', description: '500+ orders/month', icon: '🏢' }
   ];
 
-  constructor() { }
+  constructor(private messageService: MessageService) { }
 
   ngOnInit(): void {
     // Angular lifecycle hook - component initialization logic goes here
@@ -52,6 +58,20 @@ export class SignUpComponent implements OnInit {
   // Method to handle business size selection
   onBusinessSizeChange(size: string): void {
     this.selectedBusinessSize = size;
+  }
+
+  onGetCustomQuota(): void {
+    if (this.isFormValid()) {
+      this.show();
+    } else {
+      // Show validation error toast
+      this.messageService.add({ 
+        severity: 'error', 
+        summary: 'Validation Error', 
+        detail: 'Please fill in all required fields and accept the terms', 
+        life: 3000 
+      });
+    }
   }
 
   // Method to handle form submission
@@ -66,11 +86,20 @@ export class SignUpComponent implements OnInit {
         businessAddress: this.businessAddress,
         deliveryNeeds: this.deliveryNeeds,
         acceptTerms: this.acceptTerms
-      };
-      
+      };      
       console.log('Form submitted:', formData);
+
       // Add your form submission logic here
     }
+  }
+
+  show(){
+    this.messageService.add({ 
+      severity: 'success', 
+      summary: 'Success', 
+      detail: 'Your request has been sent to the team to review', 
+      life: 3000 
+    });
   }
 
   // Method to validate form
