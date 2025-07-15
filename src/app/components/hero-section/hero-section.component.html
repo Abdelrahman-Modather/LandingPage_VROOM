@@ -38,8 +38,10 @@
           <p-button [icon]="isDarkMode ? 'pi pi-moon' : 'pi pi-sun'" (onClick)="toggleDarkMode()"
             [style]="{'color': 'var(--p-text-default)', 'background-color': 'transparent', 'border-color': 'transparent'}"
             aria-label="Toggle theme" variant="text" />
-          <p-button label="Book your service"
-            [style]="{'background-color': 'var(--p-primary-color)', 'border-color': 'var(--p-primary-color)'}" />
+            <a href="#sign">         
+              <p-button label="Book your service"         
+                [style]="{'background-color': 'var(--p-primary-color)', 'border-color': 'var(--p-primary-color)'}" />
+            </a>
         </div>
       </div>
     </nav>
@@ -49,12 +51,12 @@
     <div
       class="flex h-full flex-col justify-between gap-18 overflow-x-hidden pt-40 md:gap-24 md:pt-45 lg:gap-35 lg:pt-47.5">
       <div
-        class="mx-auto flex max-w-7xl flex-col items-center gap-8 justify-self-center px-4 text-center sm:px-6 lg:px-8">
+        class=" flex max-w-7xl flex-col items-start gap-8 justify-self-center px-4 text-left sm:px-6 lg:px-8">
         <div class="flex w-fit items-center gap-2.5 rounded-full border px-3 py-2"
           style="background-color: var(--p-highlight-background); border-color: var(--p-border-color);">
           <span class="shrink-0 rounded-full px-3 py-1 text-xs font-semibold"
             style="background-color: var(--p-primary-color); color: var(--p-primary-inverse-color);">
-            AI-Powered
+            Smart
           </span>
           <span style="color: var(--p-text-muted);">Delivery management system</span>
         </div>

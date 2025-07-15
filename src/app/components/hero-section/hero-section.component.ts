@@ -26,6 +26,10 @@ export class HeroSectionComponent implements OnInit {
         }
   }
 
+  goToBottom(){
+    window.open('#sign');
+  }
+
   toggleMobileMenu() {
     this.isMobileMenuOpen = !this.isMobileMenuOpen;
   }
